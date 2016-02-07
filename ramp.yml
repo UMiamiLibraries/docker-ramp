@@ -1,0 +1,6 @@
+ramp:
+  image: little9/ramp
+  ports:
+    - 80:80
+    - 3306:3306
+    
