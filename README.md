@@ -1,4 +1,4 @@
-little9-docker-ramp
+umiamilibraries-docker-ramp
 =================
 
 Out-of-the-box RAMP image 
@@ -6,9 +6,9 @@ Out-of-the-box RAMP image
 Usage
 -----
 
-To create the image `little9/ramp`, execute the following command on the little9-docker-ramp folder:
+To create the image `umiamilibraries/ramp`, execute the following command on the umiamilibraries-docker-ramp folder:
 
-	docker build -t little9/ramp .
+	docker build -t umiamilibraries/ramp .
 
 
 Running your RAMP docker image
@@ -16,7 +16,7 @@ Running your RAMP docker image
 
 Start your image binding the external ports 80 and 3306 in all interfaces to your container:
 
-	docker run -d -p 80:80 -p 3306:3306 little9/ramp
+	docker run -d -p 80:80 -p 3306:3306 umiamilibraries/ramp
 
 Test your deployment:
 
@@ -70,7 +70,7 @@ Setting a specific password for the MySQL server admin account
 If you want to use a preset password instead of a random generated one, you can
 set the environment variable `MYSQL_PASS` to your specific password when running the container:
 
-	docker run -d -p 80:80 -p 3306:3306 -e MYSQL_PASS="mypass" little9/ramp
+	docker run -d -p 80:80 -p 3306:3306 -e MYSQL_PASS="mypass" umiamilibraries/ramp
 
 You can now test your new admin password:
 
